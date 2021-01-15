@@ -1,4 +1,4 @@
-@keyframes drawArc1 {
+/* @keyframes drawArc1 {
     0% {
         transform: rotate(180deg);
     }
@@ -32,4 +32,4 @@ body {
     padding: 30px;
     background: yellowgreen;
     animation: drawArc2 3s linear infinite;
-}
+} */
