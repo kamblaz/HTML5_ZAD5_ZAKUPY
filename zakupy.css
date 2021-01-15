@@ -5,10 +5,44 @@ body {
 
 .productsTable {
     border-collapse: separate;
+    float: left;
     border-spacing: 4vw 20vh;
 }
 
-img {
+.img-product {
+    width: 100%;
+    max-width: 200px;
+}
+
+.img-basket {
+    width: 100%;
+    max-width: 400px;
+    float: left;
+    margin-top: 50%;
+    margin-left: 10%;
+}
+
+.jajkoAnimation {
+    width: 100%;
+    max-width: 200px;
+}
+
+.majonezAnimation {
+    width: 100%;
+    max-width: 200px;
+}
+
+.salataAnimation {
+    width: 100%;
+    max-width: 200px;
+}
+
+.cebulaAnimation {
+    width: 100%;
+    max-width: 200px;
+}
+
+.pomidorAnimation {
     width: 100%;
     max-width: 200px;
 }

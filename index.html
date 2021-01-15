@@ -11,63 +11,66 @@
     <table class="productsTable">
         <tr>
             <td>
-                <img src="jajko.jpg" alt="jajko">
+                <div></div>
+                <img id="jajko" class="img-product" src="jajko.jpg" alt="jajko">
             </td>
             <td>
                 <p>jajko</p>
             </td>
             <td>
-                <button class="add">Dodaj do koszyka</button>
+                <button class="add" onclick='moveme("jajko");'>Dodaj do koszyka</button>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="majonez.jpg" alt="majonez">
+                <img id="majonez" class="img-product" src="majonez.jpg" alt="majonez">
             </td>
             <td>
                 <p>majonez</p>
             </td>
             <td>
-                <button class="add">Dodaj do koszyka</button>
+                <button class="add" onclick='moveme("majonez");'>Dodaj do koszyka</button>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="salata.jpg" alt="sałata">
+                <img id="salata" class="img-product" src="salata.jpg" alt="sałata">
             </td>
             <td>
                 <p>sałata</p>
             </td>
             <td>
-                <button class="add">Dodaj do koszyka</button>
+                <button class="add" onclick='moveme("salata");'>Dodaj do koszyka</button>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="cebula.jpg" alt="cebula">
+                <img id="cebula" class="img-product" src="cebula.jpg" alt="cebula">
             </td>
             <td>
                 <p>cebula</p>
             </td>
             <td>
-                <button class="add">Dodaj do koszyka</button>
+                <button class="add" onclick='moveme("cebula");'>Dodaj do koszyka</button>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="pomidor.jpg" alt="pomidor">
+                <img id="pomidor" class="img-product" src="pomidor.jpg" alt="pomidor">
             </td>
             <td>
                 <p>pomidor</p>
             </td>
             <td>
-                <button class="add">Dodaj do koszyka</button>
+                <button class="add" onclick='moveme("pomidor");'>Dodaj do koszyka</button>
             </td>
         </tr>
     </table>
+    <img class="img-basket" src="koszyk.jpg" alt="koszyk">
 </body>
 <script>
     function moveme(id) {
+        console.log(id);
         document.getElementById(id).className = id + "Animation";
     }
 </script>
