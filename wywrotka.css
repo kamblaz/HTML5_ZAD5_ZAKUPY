@@ -1,0 +1,193 @@
+  .cargo {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      bottom: 0;
+      left: 50%;
+      background-color: red;
+      z-index: 2;
+      visibility: visible;
+  }
+  
+  .upperTruck {
+      width: 20vw;
+      height: 13vh;
+      position: absolute;
+      bottom: 17vh;
+      left: 2vw;
+      z-index: 1;
+      background-color: black;
+  }
+  
+  .lowerTruck {
+      width: 20vw;
+      height: 3vh;
+      position: absolute;
+      bottom: 14vh;
+      left: 2vw;
+      background-color: black;
+  }
+  
+  .wheelsContainer {
+      position: absolute;
+      bottom: 10vh;
+      left: 2vw;
+  }
+  
+  .leftWheel {
+      height: 6vh;
+      width: 6vh;
+      top: -6.5vh;
+      left: 1vw;
+      position: absolute;
+      background-color: black;
+      border-radius: 50%;
+  }
+  
+  .rightWheel {
+      height: 6vh;
+      width: 6vh;
+      top: -6.5vh;
+      left: 16vw;
+      position: absolute;
+      background-color: black;
+      border-radius: 50%;
+  }
+  
+  button {
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+  
+  .main {
+      display: inline-block;
+      position: relative;
+  }
+  
+  .upperTruckAnimation {
+      width: 20vw;
+      height: 13vh;
+      position: absolute;
+      bottom: 17vh;
+      left: 2vw;
+      z-index: 1;
+      background-color: black;
+      animation: upperTruckAnimation 4s linear forwards;
+  }
+  
+  .lowerTruckAnimation {
+      width: 20vw;
+      height: 3vh;
+      position: absolute;
+      bottom: 14vh;
+      left: 2vw;
+      background-color: black;
+      animation: lowerTruckAnimation 2s linear forwards;
+  }
+  
+  .wheelsAnimation {
+      position: absolute;
+      bottom: 10vh;
+      left: 2vw;
+      animation: wheelsAnimation 2s linear forwards;
+  }
+  
+  .cargoAnimation {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      bottom: 0;
+      left: 50%;
+      background-color: red;
+      z-index: 2;
+      visibility: visible;
+      animation: cargoAnimation 4s linear forwards;
+  }
+  
+  @keyframes upperTruckAnimation {
+      0% {
+          transform: rotate3d(0, 0, 0, 0deg);
+          bottom: 17vh;
+          left: 2vw;
+      }
+      25% {
+          transform: rotate3d(0, 0, 0, 0deg);
+          bottom: 18vh;
+          left: 70vw;
+      }
+      50% {
+          transform: rotate3d(0, 0, 0, 0deg);
+          bottom: 68vh;
+          left: 16vw;
+      }
+      100% {
+          bottom: 64vh;
+          left: 15vw;
+          transform-origin: -1vh 4vw;
+          transform: rotate3d(0, 0, 1, -60deg);
+      }
+  }
+  
+  @keyframes lowerTruckAnimation {
+      0% {
+          bottom: 14vh;
+          left: 2vw;
+          /* transform: translate3d(0vw, 0vh, 0); */
+      }
+      50% {
+          bottom: 15vh;
+          left: 70vw;
+          /* transform: translate3d(10vw, 1vh, 0); */
+      }
+      100% {
+          bottom: 65vh;
+          left: 16vw;
+          /* transform: translate3d(10vw, 1vh, 0); */
+      }
+  }
+  
+  @keyframes cargoAnimation {
+      0% {
+          /* transform: translate3d(0px, 0px, 0px); */
+          bottom: 0;
+          left: 50%;
+          transform: rotate3d(0, 0, 0, 0deg);
+      }
+      25% {
+          /* transform: translate3d(0px, 0px, 0px); */
+          bottom: 0;
+          left: 50%;
+          transform: rotate3d(0, 0, 0, 0deg);
+      }
+      50% {
+          /* transform: translate3d(0px, 0, 0); */
+          bottom: 0;
+          left: 50%;
+          transform: rotate3d(0, 0, 0, 0deg);
+      }
+      100% {
+          /* transform: translate3d(-250px, 0, 0); */
+          left: -5vw;
+          bottom: 3vh;
+          transform: rotate3d(1, 1, 1, 60deg);
+      }
+  }
+  
+  @keyframes wheelsAnimation {
+      0% {
+          bottom: 10vh;
+          left: 2vw;
+          /* transform: translate3d(0vw, 0vh, 0); */
+      }
+      50% {
+          bottom: 11vh;
+          left: 70vw;
+          /* transform: translate3d(0vw, 0vh, 0); */
+      }
+      100% {
+          bottom: 61vh;
+          left: 16vw;
+          /* transform: translate3d(10vw, 1vh, 0); */
+      }
+  }

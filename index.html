@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="wywrotka.css">
+</head>
+
+<body>
+    <div>
+        <div id="lowerTruck" class="lowerTruck">
+        </div>
+        <div id="upperTruck" class="upperTruck">
+            <div id="cargo" class="cargo"></div>
+        </div>
+        <div id="wheels" class="wheelsContainer">
+            <div class="leftWheel"></div>
+            <div class="rightWheel"></div>
+        </div>
+    </div>
+</body>
+<button onclick='moveme();'>click me</button>
+<script>
+    function moveme() {
+        document.getElementById("lowerTruck").className = "lowerTruckAnimation";
+        document.getElementById("wheels").className = "wheelsAnimation";
+        document.getElementById("upperTruck").className = "upperTruckAnimation";
+        document.getElementById("cargo").className = "cargoAnimation";
+    }
+</script>
+
+</html>
