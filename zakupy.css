@@ -35,8 +35,8 @@ body {
     }
     100% {
         transform: scale(0.5, 0.5);
-        margin-left: 3vw;
-        margin-top: 3vh;
+        margin-left: 4vw;
+        margin-top: 4vh;
         animation-timing-function: linear;
     }
 }
