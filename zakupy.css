@@ -18,33 +18,74 @@ body {
     width: 100%;
     max-width: 200px;
     float: left;
-    margin-top: 30%;
-    margin-left: 10%;
+    margin-left: 10vw;
+    margin-top: 10vh;
 }
 
-.jajkoAnimation {
-    width: 100%;
-    max-width: 200px;
+@keyframes movedd {
+    /*0% {*/
+    /*    margin-left: 0px;*/
+    /*    animation-timing-function: linear;*/
+    /*}*/
+    40% {
+        margin-left: 1vw;
+        margin-top: 1vh;
+        animation-timing-function: linear;
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        transform: scale(0.5, 0.5);
+        margin-left: 1vw;
+        margin-top: 1vh;
+        animation-timing-function: linear;
+    }
 }
 
-.majonezAnimation {
-    width: 100%;
-    max-width: 200px;
-}
-
-.salataAnimation {
-    width: 100%;
-    max-width: 200px;
-}
-
-.cebulaAnimation {
-    width: 100%;
-    max-width: 200px;
-}
-
-.pomidorAnimation {
-    width: 100%;
-    max-width: 200px;
+@keyframes bounce {
+    /*0% {*/
+    /*    margin-top: 50vh;*/
+    /*    animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1); !* from https://easings.net/#easeOutQuad *!*/
+    /*}*/
+    /*0% {*/
+    /*    visibility: hidden;*/
+    /*}*/
+    /*1% {*/
+    /*    visibility: visible;*/
+    /*}*/
+    20% {
+        margin-top: 0;
+        animation-timing-function: cubic-bezier(0.11, 0, 0.5, 0);
+        /* from https://easings.net/#easeInQuad */
+    }
+    40% {
+        margin-top: 10vh;
+        animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+        /* from https://easings.net/#easeOutQuad */
+    }
+    50% {
+        margin-top: 4vh;
+        animation-timing-function: cubic-bezier(0.11, 0, 0.5, 0);
+        /* from https://easings.net/#easeInQuad */
+    }
+    60% {
+        margin-top: 10vh;
+        animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+        /* from https://easings.net/#easeOutQuad */
+    }
+    70% {
+        margin-top: 4vh;
+        animation-timing-function: cubic-bezier(0.11, 0, 0.5, 0);
+        /* from https://easings.net/#easeInQuad */
+    }
+    80% {
+        margin-top: 10vh;
+        animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+        /* from https://easings.net/#easeOutQuad */
+    }
+    100% {
+        margin-top: 10vh;
+        visibility: hidden;
+    }
 }
 
 
