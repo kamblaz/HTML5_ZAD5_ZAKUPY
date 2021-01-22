@@ -6,19 +6,19 @@ body {
 .productsTable {
     border-collapse: separate;
     float: left;
-    border-spacing: 4vw 20vh;
+    border-spacing: 4vw 10vh;
 }
 
 .img-product {
     width: 100%;
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .img-basket {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
     float: left;
-    margin-top: 50%;
+    margin-top: 30%;
     margin-left: 10%;
 }
 
